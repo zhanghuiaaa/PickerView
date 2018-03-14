@@ -7,8 +7,9 @@
 //
 
 #import "ViewController.h"
-
+#import "PickerView.h"
 @interface ViewController ()
+@property(strong, nonatomic) PickerView *pickerView;
 
 @end
 
@@ -16,14 +17,26 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+   
+    
+    UIButton * add = [[UIButton alloc] initWithFrame:CGRectMake(100, 100, 100, 100)];
+    add.backgroundColor = [UIColor redColor];
+    [add addTarget:self action:@selector(clicjk) forControlEvents:UIControlEventTouchUpInside];
+    
+    [self.view addSubview:add];
+    
+    
+    
+    
 }
 
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (void)clicjk{
+    
+    PickerView *pickerView = [[PickerView alloc] initWithFrame:self.view.bounds];
+    
+    self.pickerView = pickerView;
+    [self.view addSubview:pickerView];
+    
 }
-
 
 @end

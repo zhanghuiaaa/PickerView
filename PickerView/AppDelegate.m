@@ -9,7 +9,7 @@
 #import "AppDelegate.h"
 
 @interface AppDelegate ()
-
+@property (nonatomic, assign) CGFloat pickerViewHeight; 
 @end
 
 @implementation AppDelegate
