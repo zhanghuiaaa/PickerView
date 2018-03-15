@@ -175,8 +175,6 @@
 				C830DA0420575BDA0090CAA2 /* LaunchScreen.storyboard */,
 				C830DA0720575BDA0090CAA2 /* Info.plist */,
 				C830DA0820575BDA0090CAA2 /* main.m */,
-				C830DA6920576F4F0090CAA2 /* PickerView.h */,
-				C830DA6A20576F4F0090CAA2 /* PickerView.m */,
 			);
 			path = PickerView;
 			sourceTree = "<group>";
@@ -262,6 +260,8 @@
 			children = (
 				C830DA6720576F360090CAA2 /* BaseView.h */,
 				C830DA6620576F360090CAA2 /* BaseView.m */,
+				C830DA6920576F4F0090CAA2 /* PickerView.h */,
+				C830DA6A20576F4F0090CAA2 /* PickerView.m */,
 			);
 			path = Base;
 			sourceTree = "<group>";
